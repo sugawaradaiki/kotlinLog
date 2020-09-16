@@ -4,10 +4,13 @@ import android.util.Log
 
 open class Human:Animal,Thinkable {
 
+    //プロパティ
+    var hobby:String
+
     //引数コンストラクタ
     //クラスからインスタンスが生成される際に呼び出される初期化メソッド
-    constructor(name:String, age:Int, hobby:String):super(name, age, hobby){
-
+    constructor(name:String, age:Int, hobby:String):super(name, age){
+        this.hobby = hobby
     }
 
     //Animalクラスのメソッドをオーバーライド
